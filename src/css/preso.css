@@ -1,3 +1,19 @@
 .snap {
 	min-height: 740px;
 }
+
+.img-swap {
+  position:relative;
+  margin:0 auto;
+}
+.img-swap img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+.img-swap img.normal:hover {
+  opacity:0;
+}
